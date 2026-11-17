@@ -20,7 +20,7 @@ import com.payroll.service.BankAccountService;
 
 @RestController
 @RequestMapping("/api/bank-accounts")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "${app.cors.allowed-origins}")
 public class BankAccountController {
 
     private final BankAccountService bankAccountService;

@@ -27,7 +27,7 @@ import com.payroll.service.AttendanceService;
 
 @RestController
 @RequestMapping("/api/attendance")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "${app.cors.allowed-origins}")
 public class AttendanceController {
 
     private final AttendanceService attendanceService;

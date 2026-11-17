@@ -22,7 +22,7 @@ import com.payroll.service.EmployeeService;
 
 @RestController
 @RequestMapping("/api/employees")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "${app.cors.allowed-origins}")
 @PreAuthorize("hasAnyRole('ADMIN', 'HR')")
 public class EmployeeController {
 

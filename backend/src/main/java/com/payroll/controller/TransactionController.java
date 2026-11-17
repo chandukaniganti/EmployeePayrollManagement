@@ -22,7 +22,7 @@ import com.payroll.service.TransactionService;
 
 @RestController
 @RequestMapping("/api/transactions")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "${app.cors.allowed-origins}")
 public class TransactionController {
 
     private final TransactionService transactionService;

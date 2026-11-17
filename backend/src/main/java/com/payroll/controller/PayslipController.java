@@ -16,7 +16,7 @@ import com.payroll.payslip.PayslipService;
 
 @RestController
 @RequestMapping("/api/payslips")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "${app.cors.allowed-origins}")
 public class PayslipController {
 
     private final PayslipService payslipService;

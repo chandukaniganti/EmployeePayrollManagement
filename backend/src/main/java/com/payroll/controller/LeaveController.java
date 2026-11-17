@@ -23,7 +23,7 @@ import com.payroll.service.LeaveService;
 
 @RestController
 @RequestMapping("/api/leaves")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "${app.cors.allowed-origins}")
 public class LeaveController {
 
     private final LeaveService leaveService;
