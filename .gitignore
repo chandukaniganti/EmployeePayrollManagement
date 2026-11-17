@@ -1,0 +1,47 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+
+# Local production configuration
+application-local.properties
+application-prod.properties
+
+# Java / Maven
+**/target/
+*.class
+*.jar
+*.war
+
+# Node / React
+**/node_modules/
+**/dist/
+**/.vite/
+
+# Logs
+*.log
+logs/
+
+# Database backups and dumps
+*.sql
+*.sql.gz
+*.dump
+*.bak
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# Operating system
+.DS_Store
+Thumbs.db
+# Local diagnostic files
+**/startup-error.txt
